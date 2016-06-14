@@ -77,7 +77,7 @@ ragged2e,fontawesome, multicol}
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
 %	{\fontfamily{pzc}\selectfont\Huge Curriculum vitae}
-%	\bigskip
+	\bigskip
     \end{center}]}
 
 % Overrides the \section command to capitalize every
