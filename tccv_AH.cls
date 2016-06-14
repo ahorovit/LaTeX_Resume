@@ -151,7 +151,7 @@ ragged2e,fontawesome, multicol}
 \newenvironment{yearlist}{
     \renewcommand\item[4][]{%
 	{\sc\sffamily ##2} & {\bfseries ##3} \\
-	\ifstrempty{##1}{}{& {\sc ##1} \\}
+	\ifstrempty{##1}{}{& {\sc\sffamily ##1} \\}
 	& {\it ##4}\medskip\\}
     \tabularx{\linewidth}{rX}}
     {\endtabularx}
