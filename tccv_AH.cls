@@ -138,9 +138,9 @@ ragged2e,fontawesome, multicol}
 	{\raggedleft\sc\sffamily ##1\\[1pt]}
 	{\bf\sffamily ##2}\\[2pt]
 	{\large\it\sffamily ##3}
-	\medskip
+	\smallskip
 	\renewcommand\inskip{\bigskip}}}
-    {\bigskip}
+%    {\smallskip}
 
 % Use only \item inside this environment: no other macros
 % are allowed:
