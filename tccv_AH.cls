@@ -30,7 +30,7 @@
 \LoadClass[10pt]{scrartcl}
 
 \setcounter{secnumdepth}{-1}
-\RequirePackage[letterpaper, hmargin=1.25cm,vmargin=1.25cm,twocolumn,columnsep=1.25cm]{geometry}
+\RequirePackage[letterpaper, hmargin=1.25cm,vmargin=1cm,twocolumn,columnsep=1.25cm]{geometry}
 \RequirePackage{bookman,etoolbox,hyperref,marvosym,needspace,tabularx,xcolor,
 ragged2e,fontawesome, multicol}
 
@@ -77,7 +77,7 @@ ragged2e,fontawesome, multicol}
 	\vskip-\lastskip%
 	{\usekomafont{part} #1} \medskip\\
 %	{\fontfamily{pzc}\selectfont\Huge Curriculum vitae}
-	\bigskip
+%	\bigskip
     \end{center}]}
 
 % Overrides the \section command to capitalize every
@@ -148,14 +148,14 @@ ragged2e,fontawesome, multicol}
 % |[
 % \item[optional: what has been achieved]{years}{subject}{notes}
 % ]|
-\newenvironment{yearlist}{%
+\newenvironment{yearlist}{
     \renewcommand\item[4][]{%
 	{\sc\sffamily ##2} & {\bfseries ##3} \\
 	\ifstrempty{##1}{}{& {\sc ##1} \\}
 	& {\it ##4}\medskip\\}
     \tabularx{\linewidth}{rX}}
     {\endtabularx}
-    
+
     
     
 % Modified Yearlist to offset year range (much like eventlist)    
@@ -168,9 +168,9 @@ ragged2e,fontawesome, multicol}
 	{\raggedleft\sc ##1\\[1pt]}
 	{\large\bf ##2}\\[2pt]
 	{\it ##3}
-	\medskip
+	\smallskip
 	\renewcommand\inskip{\medskip}}}
-   {\medskip}
+%   {\medskip}
 
 
 \newcommand{\jobitem}[3]{%
