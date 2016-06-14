@@ -1,0 +1,147 @@
+\documentclass{tccv_AH}
+\usepackage[english]{babel}
+
+\begin{document}
+\sffamily
+
+\part{Adin Horovitz}
+
+%       CONTACT INFO
+
+\personal
+% Include GitHub here!
+    [github.com/ahorovit]
+    {24 Kent Place Apt 4 \newline Menlo Park, CA 94025}
+    {(612) 229-2763}
+    {ahorovit@gmail.com}
+    {bit.ly/28iETw1}
+%    {https://www.linkedin.com/in/adin-horovitz-85ab1b3}
+
+
+%       EDUCATION
+
+\section{Education}
+
+\begin{yearlist}
+
+\item[Boston University - Boston, MA]{2016}
+     {MS, Computer Engineering - GPA 3.9}
+
+\item[Knox College - Galesburg, IL]{2008}
+     {BA, Chemistry/Neuroscience - GPA 3.6}
+
+\end{yearlist}
+
+
+%       Programming Skills
+
+\section{Software Skills \footnotesize{(Decreasing Order)}}
+
+\begin{factlist}
+
+\item{Languages}
+     {C, C++, Java, MATLAB, R, Python, C\#, HTML, CSS, MIPS/x86 Assembly, SQL, \LaTeX}
+
+\item{General}
+     {Linux Kernel Module, Qt UI, Web Design (Visual Studio), GPU (CUDA), Arduino, Multicore (OpenMP/Pthreads), 
+     Android App Dev (Android Studio), bash scripting, QEMU, Verilog, Cadence Virtuoso, gdb, Git, IDA Pro}
+
+\end{factlist}
+
+
+%           Employment History
+
+\section{Professional Experience}
+
+\iffalse
+\begin{joblist}
+
+\item{Feb 2014 - Jul 2014}
+     {Walden University School of Nursing}
+     {Field Education}
+
+\item{Oct 2012 - Aug 2013}
+     {Kaplan Test Preparation}
+     {MCAT Instructor/Tutor}
+
+\item{Aug 2009 - Aug 2012}
+     {Lab of Neuropsychology, NIMH}
+     {Animal Biologist}
+\end{joblist}
+\fi
+
+\jobitem{Feb 2014 - Jul 2014}{Walden University School of Nursing}{Field Education Temp}
+\begin{itemize}
+    \itemsep-0.25em
+    \item{Application process automation using R}
+\end{itemize}
+
+\medskip
+
+\jobitem{Oct 2012 - Aug 2013}{Kaplan Test Preparation}{MCAT Instructor/Tutor}
+\begin{itemize}
+    \itemsep-0.25em
+    \item{Teach MCAT content and strategy to groups and individuals}
+    \item{Present course products at marketing events}
+\end{itemize}
+
+\medskip
+
+\jobitem{Aug 2009 - Aug 2012}{Lab of Neuropsychology, NIMH}{Animal Biologist}
+\begin{itemize}
+    \itemsep-0.25em
+    \item{Exploratory data analysis using MATLAB}
+    \item{Design/execute behavioral experiments}
+    \item{Present findings in PowerPoint and poster formats}
+\end{itemize}
+
+
+\vfill
+%\columnbreak
+
+
+
+%       PROJECTS
+\section{Selected Projects}
+
+\begin{eventlist}
+
+\item{2016}
+     {Project Lead}
+     {"bitQuit" -- IoT Smoking Abatement Tool}
+
+The bitQuit is a smart cigarette case (and Android app) that helps smokers limit and track cigarette use. The case locks for a programmable interval, and custom switches count cigarettes remaining. These data are transmitted via BLE to the app, where smoking history and remaining wait time are viewable.
+
+\item{2016}
+     {Front-End, Firmware Developer}
+     {"Display-o-Matic" e-Paper Tie}
+     
+This novelty tie has a built-in e-paper display which displays arbitrary patterns/images. The user selects image thumbnail on touchscreen linked to Gumstix Verdex board. Selection is conveyed via Bluetooth to Raspberry Pi, which flashes new image to display via GPIO pins.
+
+\item{2016}
+     {CUDA Developer}
+     {High Performance FFT}
+     
+Using a naive FFT as a baseline, high-performance methods (code motion, loop unrolling, pThreads, OpenMP) were applied in various combinations to achieve a range of speedup. Also wrote a CUDA implementation to utilize GPU parallelism.
+     
+\item{2015}
+     {Back-End Developer}
+     {"JAMs" Playlist Application}
+
+This Java-based playlist app queries and updates a database of playlists/songs based on popularity. Searches feature fast autocomplete using a Prefix Tree, and popularity ranking is maintained with a modified BST. UI implemented with JavaFX.
+
+\item{2015}
+     {Researcher}
+     {C Vulnerability Static Analysis Tool}
+    
+Inspired by usr/bin/rsh vulnerability allowing addition of user to sudoers, this tool batch scans source code for possible privilege escalation risks. Python web scraper was used to download OS X source code in bulk.
+
+\item{2014}
+     {Lead Developer}
+     {"LEAP Legends" -- Android App}
+
+Original hexagon-based game for Android. Board elements and game pieces are implemented with OOP principles to create a simple, yet deep two-player strategy experience. 
+
+\end{eventlist}
+
+\end{document}
